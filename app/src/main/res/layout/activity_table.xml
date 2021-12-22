@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".Table"
+    tools:deviceIds="wear">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/time_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|top"
+            android:text="time"
+            android:textAlignment="textEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_weight="20"
+            android:background="#000000"
+            android:gravity="left"
+            android:text="back"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="2dp"
+                android:background="@drawable/gray_rtableburron"
+                android:drawableLeft="@drawable/borsch"
+                android:onClick="onClick"
+                android:text="Борщ"
+                android:textAlignment="textStart"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="2dp"
+                android:background="@drawable/gray_rtableburron"
+                android:drawableLeft="@drawable/caesar"
+                android:onClick="onClick"
+                android:text='Салат "Цезарь"'
+                android:textAlignment="textStart"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="2dp"
+                android:background="@drawable/gray_rtableburron"
+                android:drawableLeft="@drawable/pancake"
+                android:onClick="onClick"
+                android:text="Блинчики"
+                android:textAlignment="textStart"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="2dp"
+                android:background="@drawable/gray_rtableburron"
+                android:drawableLeft="@drawable/milkshake"
+                android:onClick="onClick"
+                android:text="Мол. коктейль"
+                android:textAlignment="textStart"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="2dp"
+                android:background="@drawable/gray_rtableburron"
+                android:drawableLeft="@drawable/spaghetti"
+                android:onClick="onClick"
+                android:text="Спагетти"
+                android:textAlignment="textStart"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.wear.widget.BoxInsetLayout>
